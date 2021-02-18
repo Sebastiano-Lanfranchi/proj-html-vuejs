@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1800px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-header .box-header-logo {
+  width: 35vw;
+  height: 100vh;
+  background-color: #1F1E38;
+}
+.nav-header .box-header-logo .logo_phlox {
+  width: 100px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+.nav-header .box-header-menu {
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background-size: cover;
+  background-image: url("../img/background_header.jpg");
+}
+.nav-header .box-header-menu ul {
+  margin-right: 150px;
+}
+.nav-header .box-header-menu * li {
+  height: 40px;
+  line-height: 80px;
+  margin-left: 30px;
+  font-weight: lighter;
+  display: inline-block;
+  color: #AAAAAA;
+}
+.nav-header .box-header-menu * li:hover {
+  color: #FFFFFF;
+  border-top: 4px solid #FFFFFF;
+}
