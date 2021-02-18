@@ -16,6 +16,7 @@
 
 // HEADER
 @import "colors.scss";
+@import "mixIn";
 
 .nav-header{
   display: flex;
@@ -26,11 +27,57 @@
     height: 100vh;
     background-color: $backgroud_headerBox1;
 
+    .jumbotron{
+      margin-top: 30px;
+      margin-left: 200px;
+
+      .box-jumbotron{
+        position: absolute;
+        top: 300px;
+        max-width: 600px;
+
+        .dash{
+          background: $backgroud_headerBox1;
+          height: 10px;
+          width: 50px;
+          border-bottom: 3px solid $font_dash;
+          position: relative;
+          top:20px;
+          right: 60px;
+        }
+        .dash-title{
+          @include dash-title;
+
+        }
+
+        p{
+          color: $font_headerNav;
+          text-transform: uppercase;
+          line-height: 100px;
+          font-family: 'Cairo', sans-serif;
+          font-size: 120px;
+          position: relative;
+          right: 50px;
+          top: 20px;
+        }
+      }
+      .buttonRead{
+        position: relative;
+        width: 250px;
+        height: 60px;
+        top: 660px;
+        right: 50px;
+        text-align: center;
+        line-height: 60px;
+        font-weight: 300;
+        background-color: $backgroud_button;
+
+      }
+    }
+
     .logo_phlox{
       width: 100px;
       height: 20px;
-      margin-top: 30px;
-      margin-left: 200px;
     }
   }
 
