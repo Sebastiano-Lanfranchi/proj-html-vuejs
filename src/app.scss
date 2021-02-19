@@ -10,7 +10,7 @@
 // CONTAINER
 
 .container{
-  width: 1800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -23,8 +23,8 @@
   justify-content: space-between;
 
   .box-header-logo{
-    width: 35vw;
-    height: 100vh;
+    width: 35%;
+    height: 1000px;
     background-color: $backgroud_headerBox1;
 
     .jumbotron{
@@ -37,11 +37,7 @@
         max-width: 600px;
 
         .dash{
-          background: $backgroud_headerBox1;
-          height: 10px;
-          width: 50px;
-          border-bottom: 3px solid $font_dash;
-          position: relative;
+          @include dash;
           top:20px;
           right: 60px;
         }
@@ -82,8 +78,8 @@
   }
 
   .box-header-menu{
-    width: 65vw;
-    height: 100vh;
+    width: 65%;
+    height: 1000px;;
     display: flex;
     justify-content: flex-end;
     background-size: cover;
@@ -104,6 +100,130 @@
       &:hover {
         color: $font_headerNav;
         border-top: 4px solid $font_headerNav;
+      }
+    }
+  }
+}
+
+// MAIN REDDOT
+
+body{
+  overflow-y: scroll;
+}
+
+.box-redDot{
+  margin-top: 100px;
+
+  h2{
+    text-transform: uppercase;
+    color: $font_boxRedDot;
+  }
+
+  .dash{
+    height: 10px;
+    width: 100%;
+    border-bottom: 3px solid $font_dash;
+    display: inline-block;
+    bottom: 30px;
+    left: 400px;
+    z-index: 101;
+    position: relative;
+  }
+}
+
+.column-container{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: $font_boxRedDot;
+
+ .column1-redDot, .column2-redDot{
+   width: 50%;
+   margin-bottom: 50px;
+
+   .icon-redDot{
+     display: inline-block;
+     padding: 15px;
+     color: $font_headerNav;
+     background-color: $backgroud_icon;
+     border-radius: 50%;
+     position: relative;
+     bottom: 80px;
+     right: 30px;
+   }
+
+   .text-redDot{
+     display: inline-block;
+     width: 400px;
+
+     h3{
+       text-transform: uppercase;
+       margin-bottom: 30px;
+       font-size: 30px;
+     }
+
+     p{
+       margin-bottom: 100px;
+       line-height: 25px;
+       font-weight: 300;
+     }
+   }
+ }
+.column2-redDot{
+  margin-left: 250px;
+}
+}
+
+// MAIN ABOUTUS
+
+.container-aboutUs{
+   display: flex;
+   flex-direction: space-between;
+
+  .box-aboutUs1{
+    width: 60%;
+    height: 850px;
+    background-image: url("../img/aboutUsRed.jpg");
+  }
+  .box-aboutUs2{
+    width: 40%;
+    height: 850px;
+    background-color: $backgroud_headerBox1;
+    position: relative;
+
+    .box-jumbotron{
+      position: absolute;
+      top: 300px;
+      left: 150px;
+      max-width: 700px;
+
+      .dash{
+        @include dash;
+        top:20px;
+        right: 60px;
+      }
+      .dash-title{
+        @include dash-title;
+
+      }
+
+      p{
+        color: $font_headerNav;
+        text-transform: uppercase;
+        line-height: 50px;
+        font-family: 'Cairo', sans-serif;
+        font-size: 60px;
+        position: relative;
+        right: 50px;
+        top: 20px;
+      }
+
+      div{
+        color: $font_headerNav;
+        position: relative;
+        line-height: 20px;
+        top: 50px;
+        right: 50px;
       }
     }
   }

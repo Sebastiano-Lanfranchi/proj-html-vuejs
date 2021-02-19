@@ -3,3 +3,11 @@
  text-transform: uppercase;
  font-weight: 300;
 }
+
+@mixin dash{
+  background: $backgroud_headerBox1;
+  height: 10px;
+  width: 50px;
+  border-bottom: 3px solid $font_dash;
+  position: relative;
+}
