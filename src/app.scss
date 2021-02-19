@@ -228,3 +228,97 @@ body{
     }
   }
 }
+
+// MAIN ROW GET STARTED
+
+.row-getStarted{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .row-getStarted1{
+    background-color: $backgroud_button;
+    width: 92%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+
+    .slogan-title{
+      width: 300px;
+      height: 100px;
+      position: relative;
+      color: $backgroud_headerBox1;
+      top: 100px;
+      left: 300px;
+
+      h3{
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+    }
+    .slogan-text{
+      width: 400px;
+      position: relative;
+      top: 100px;
+      left: 300px;
+    }
+    .slogan-button{
+      height: 50px;
+      width: 200px;
+      position: relative;
+      top: 250px;
+      left: 142px;
+      background-color: $backgroud_buttonHover;
+      color: $font_headerNav;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .row-getStarted2{
+    background-color: $backgroud_headerBox1;
+    width: 8%;
+    height: 300px;
+  }
+}
+// BOX CAROSELL
+
+.container-project{
+  width: 100%;
+  height: 900px;
+  background-color: $backgroud_headerBox1;
+  padding-top: 200px;
+
+  .container-carosell{
+     width: 1600px;
+     margin: 0 auto;
+     position: relative;
+
+     .box-jumbotron{
+       position: absolute;
+       left: 150px;
+       max-width: 900px;
+
+       .dash{
+         @include dash;
+         top:20px;
+         right: 60px;
+       }
+       .dash-title{
+         @include dash-title;
+
+       }
+
+       .title-carosell{
+         color: $font_headerNav;
+         text-transform: uppercase;
+         line-height: 50px;
+         font-family: 'Cairo', sans-serif;
+         font-size: 50px;
+         position: relative;
+         right: 50px;
+         top: 20px;
+       }
+    }
+  }
+}
