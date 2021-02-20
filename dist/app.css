@@ -309,6 +309,10 @@ body {
   width: 50px;
   height: 50px;
 }
+.container-project .container-carousel .box-jumbotron .head-carousel .slider-carousel .slider-prev:hover {
+  cursor: pointer;
+  background-color: #888888;
+}
 .container-project .container-carousel .box-jumbotron .head-carousel .slider-carousel .slider-next {
   color: #FFFFFF;
   background-color: #333333;
@@ -317,6 +321,10 @@ body {
   line-height: 50px;
   width: 50px;
   height: 50px;
+}
+.container-project .container-carousel .box-jumbotron .head-carousel .slider-carousel .slider-next:hover {
+  cursor: pointer;
+  background-color: #888888;
 }
 .container-project .container-carousel .slider-img {
   display: flex;
@@ -329,6 +337,11 @@ body {
   width: 501px;
   height: 436px;
   display: block;
+}
+.container-project .container-carousel .slider-img .container-img:hover .imgResize {
+  cursor: pointer;
+  width: 521px;
+  height: 456px;
 }
 .container-project .container-carousel .slider-img .container-img .imgResize {
   width: 501px;

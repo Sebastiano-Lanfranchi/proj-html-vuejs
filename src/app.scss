@@ -336,6 +336,11 @@ body{
            line-height: 50px;
            width: 50px;
            height: 50px;
+
+           &:hover{
+             cursor: pointer;
+             background-color: $backgroud_iconCaroselHover;
+           }
          }
          .slider-next{
            color: $font_headerNav;
@@ -345,6 +350,11 @@ body{
            line-height: 50px;
            width: 50px;
            height: 50px;
+
+           &:hover{
+             cursor: pointer;
+             background-color: $backgroud_iconCaroselHover;
+           }
          }
        }
      }
@@ -360,6 +370,12 @@ body{
         width: 501px;
         height: 436px;
         display: block;
+
+        &:hover .imgResize{
+          cursor: pointer;
+          width: 521px;
+          height: 456px;
+        }
 
         .imgResize{
           width: 501px;
