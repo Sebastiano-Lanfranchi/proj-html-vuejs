@@ -281,7 +281,7 @@ body{
     height: 300px;
   }
 }
-// BOX CAROSELL
+// BOX
 
 .container-project{
   width: 100%;
@@ -289,7 +289,7 @@ body{
   background-color: $backgroud_headerBox1;
   padding-top: 200px;
 
-  .container-carosell{
+  .container-carousel{
      width: 1600px;
      margin: 0 auto;
      position: relative;
@@ -309,13 +309,13 @@ body{
 
        }
 
-        .head-carosell{
+        .head-carousel{
           margin: 0 auto;
           width: 1600px;
           display: flex;
           justify-content: space-around;
 
-       .title-carosell{
+       .title-carousel{
          color: $font_headerNav;
          text-transform: uppercase;
          line-height: 50px;
@@ -326,7 +326,7 @@ body{
          top: 20px;
        }
 
-       .slider-carosell{
+       .slider-carousel{
          display: flex;
 
          .slider-prev{
@@ -348,6 +348,24 @@ body{
          }
        }
      }
+    }
+    .slider-img{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative;
+      top: 200px;
+
+      .container-img{
+        width: 501px;
+        height: 436px;
+        display: block;
+
+        .imgResize{
+          width: 501px;
+          height: 436px;
+        }
+      }
     }
   }
 }

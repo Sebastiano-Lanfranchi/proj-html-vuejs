@@ -258,17 +258,17 @@ body {
   background-color: #1F1E38;
   padding-top: 200px;
 }
-.container-project .container-carosell {
+.container-project .container-carousel {
   width: 1600px;
   margin: 0 auto;
   position: relative;
 }
-.container-project .container-carosell .box-jumbotron {
+.container-project .container-carousel .box-jumbotron {
   position: absolute;
   left: 150px;
   max-width: 900px;
 }
-.container-project .container-carosell .box-jumbotron .dash {
+.container-project .container-carousel .box-jumbotron .dash {
   background: #1F1E38;
   height: 10px;
   width: 50px;
@@ -277,18 +277,18 @@ body {
   top: 20px;
   right: 60px;
 }
-.container-project .container-carosell .box-jumbotron .dash-title {
+.container-project .container-carousel .box-jumbotron .dash-title {
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 300;
 }
-.container-project .container-carosell .box-jumbotron .head-carosell {
+.container-project .container-carousel .box-jumbotron .head-carousel {
   margin: 0 auto;
   width: 1600px;
   display: flex;
   justify-content: space-around;
 }
-.container-project .container-carosell .box-jumbotron .head-carosell .title-carosell {
+.container-project .container-carousel .box-jumbotron .head-carousel .title-carousel {
   color: #FFFFFF;
   text-transform: uppercase;
   line-height: 50px;
@@ -298,10 +298,10 @@ body {
   right: 270px;
   top: 20px;
 }
-.container-project .container-carosell .box-jumbotron .head-carosell .slider-carosell {
+.container-project .container-carousel .box-jumbotron .head-carousel .slider-carousel {
   display: flex;
 }
-.container-project .container-carosell .box-jumbotron .head-carosell .slider-carosell .slider-prev {
+.container-project .container-carousel .box-jumbotron .head-carousel .slider-carousel .slider-prev {
   color: #FFFFFF;
   background-color: #333333;
   text-align: center;
@@ -309,7 +309,7 @@ body {
   width: 50px;
   height: 50px;
 }
-.container-project .container-carosell .box-jumbotron .head-carosell .slider-carosell .slider-next {
+.container-project .container-carousel .box-jumbotron .head-carousel .slider-carousel .slider-next {
   color: #FFFFFF;
   background-color: #333333;
   text-align: center;
@@ -317,4 +317,20 @@ body {
   line-height: 50px;
   width: 50px;
   height: 50px;
+}
+.container-project .container-carousel .slider-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 200px;
+}
+.container-project .container-carousel .slider-img .container-img {
+  width: 501px;
+  height: 436px;
+  display: block;
+}
+.container-project .container-carousel .slider-img .container-img .imgResize {
+  width: 501px;
+  height: 436px;
 }

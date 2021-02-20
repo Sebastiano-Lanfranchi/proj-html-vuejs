@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="img/logo_phlox.png">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="https://kit.fontawesome.com/35b3b34844.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto:ital,wght@0,100;0,300;0,500;1,300;1,700&display=swap" rel="stylesheet">
@@ -10,6 +11,7 @@
   <title>Phlox</title>
 </head>
 <body>
+  <div id="root">
   <!-- CONTAINER -->
   <!-- HEADER -->
   <header>
@@ -139,24 +141,38 @@
           </div>
           <!-- CONTAINER PROJECT -->
           <div class="container-project">
-            <div class="container-carosell">
+            <div class="container-carousel">
               <div class="box-jumbotron">
                 <div class="dash"></div>
                 <h3 class="dash-title">Project</h3>
-                <div class="head-carosell">
-                 <div class="title-carosell">our expert trusted <br> consultants help clients
+                <div class="head-carousel">
+                 <div class="title-carousel">our expert trusted <br> consultants help clients
                  </div>
-                 <div class="slider-carosell">
-                   <div class="slider-prev">
+                 <div class="slider-carousel">
+                   <div class="slider-prev" @click="sliderPrev">
                     <i class="fas fa-long-arrow-alt-left"></i>
                    </div>
-                   <div class="slider-next">
+                   <div class="slider-next" @click="sliderNext">
                     <i class="fas fa-long-arrow-alt-right"></i>
                    </div>
+                   </div>
+                   </div>
                  </div>
-                </div>
-              </div>
+                 <div class="slider-img" >
+                   <div class="container-img">
+                     <img :src="arrayCarousel[car0]" class="imgResize" alt="">
+                   </div>
+                   <div class="container-img">
+                     <img :src="arrayCarousel[car1]" class="imgResize" alt="">
+                   </div>
+                   <div class="container-img">
+                     <img :src="arrayCarousel[car2]" class="imgResize" alt="">
+                   </div>
+                 </div>
+
             </div>
+          </div>
+          <script src="js/script.js" charset="utf-8"></script>
           </div>
         </body>
         </html>
