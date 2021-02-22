@@ -11,3 +11,13 @@
   border-bottom: 3px solid $font_dash;
   position: relative;
 }
+
+@mixin button{
+  width: 250px;
+  height: 60px;
+  right: 50px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 300;
+  background-color: $backgroud_button;
+}
