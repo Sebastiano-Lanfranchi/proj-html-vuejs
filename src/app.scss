@@ -61,7 +61,10 @@
         position: relative;
         top: 660px;
         @include button;
-
+        &:hover{
+          color: $font_headerNav;
+          background-color: $backgroud_buttonHover;
+        }
       }
     }
 
@@ -532,6 +535,11 @@ body{
       bottom: 50px;
       text-transform: uppercase;
       @include button;
+
+      &:hover{
+        color: $font_headerNav;
+        background-color: $backgroud_buttonHover;
+      }
     }
   }
 

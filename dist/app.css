@@ -63,6 +63,10 @@
   font-weight: 300;
   background-color: #39FFBF;
 }
+.nav-header .box-header-logo .jumbotron .buttonRead:hover {
+  color: #FFFFFF;
+  background-color: #F81D39;
+}
 .nav-header .box-header-logo .logo_phlox {
   width: 100px;
   height: 20px;
@@ -497,6 +501,10 @@ body {
   line-height: 60px;
   font-weight: 300;
   background-color: #39FFBF;
+}
+.container-blog .box-jumbotron .button-blog:hover {
+  color: #FFFFFF;
+  background-color: #F81D39;
 }
 .container-blog .container-blog-image {
   display: flex;
