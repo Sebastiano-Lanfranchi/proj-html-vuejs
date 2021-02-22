@@ -505,33 +505,63 @@ body{
     width: 1600px;
     position: relative;
 
-       .dash{
-         position: absolute;
-         top: 20px;
-         @include dash;
+    .dash{
+      position: absolute;
+      top: 20px;
+      @include dash;
 
-       }
-       .dash-title{
-         position: absolute;
-         right: 1500px;
-         @include dash-title;
-       }
-       .title-blog{
-         color: $font_headerNav;
-         text-transform: uppercase;
-         line-height: 50px;
-         font-family: 'Cairo', sans-serif;
-         font-size: 50px;
-         margin-top: 50px;
+    }
+    .dash-title{
+      position: absolute;
+      right: 1500px;
+      @include dash-title;
+    }
 
-       }
-       .button-blog{
-         position: relative;
-         left: 1300px;
-         bottom: 50px;
-         text-transform: uppercase;
-         @include button;
-       }
+    .title-blog{
+      color: $font_headerNav;
+      text-transform: uppercase;
+      line-height: 50px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 50px;
+      margin-top: 50px;
+    }
 
-}
+    .button-blog{
+      position: relative;
+      left: 1300px;
+      bottom: 50px;
+      text-transform: uppercase;
+      @include button;
+    }
+  }
+
+  .container-blog-image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+      .imgResize-blog{
+        width: 800px;
+        margin-left: 30px;
+        position: relative;
+      }
+      .box-image1{
+        width: 600px;
+        height: 300px;
+        background-color: $backgroud_header;
+        position: absolute;
+        top: 400px;
+        left: 360px;
+
+        .calendar{
+          color: $font_date;
+        }
+      }
+
+
+  }
+
+
+
 }
