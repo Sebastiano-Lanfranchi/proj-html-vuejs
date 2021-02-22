@@ -83,15 +83,20 @@
   margin-right: 150px;
 }
 .nav-header .box-header-menu * li {
-  height: 40px;
-  line-height: 80px;
-  margin-left: 30px;
   font-weight: lighter;
   display: inline-block;
   color: #AAAAAA;
 }
-.nav-header .box-header-menu * li:hover {
+.nav-header .box-header-menu * li a {
+  height: 80px;
+  line-height: 80px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #AAAAAA;
+}
+.nav-header .box-header-menu * li a:hover {
   color: #FFFFFF;
+  font-family: "Cairo", sans-serif;
   border-top: 4px solid #FFFFFF;
 }
 

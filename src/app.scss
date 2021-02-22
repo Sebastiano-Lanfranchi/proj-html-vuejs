@@ -87,16 +87,23 @@
     }
 
     *li{
-      height: 40px;
-      line-height: 80px;
-      margin-left: 30px;
       font-weight: lighter;
       display: inline-block;
       color: $font_dashText;
 
-      &:hover {
-        color: $font_headerNav;
-        border-top: 4px solid $font_headerNav;
+      a{
+      height: 80px;
+      line-height: 80px;
+      margin-left: 50px;
+       text-decoration: none;
+       color: $font_dashText;
+
+       &:hover {
+         color: $font_headerNav;
+         font-family: 'Cairo', sans-serif;
+         border-top: 4px solid $font_headerNav;
+      }
+
       }
     }
   }
@@ -659,3 +666,5 @@ body{
     position: relative;
   }
 }
+
+// FOOTER

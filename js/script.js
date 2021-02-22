@@ -1,6 +1,32 @@
 new Vue({
   el:'#root',
   data:{
+    navBarElement:[
+      {
+      page: 'HOME',
+      link: '#'
+    },
+    {
+    page: 'ABOUT',
+    link: '#'
+    },
+    {
+    page: 'PROJECTS',
+    link: '#'
+    },
+    {
+    page: 'SERVICES',
+    link: '#'
+    },
+    {
+    page: 'BLOG',
+    link: '#'
+    },
+    {
+    page: 'CONTACT',
+    link: '#'
+    },
+    ],
     arrayCarousel: [
       'img/imgCarousel/1.jpg',
       'img/imgCarousel/2.jpg',
