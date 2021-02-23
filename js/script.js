@@ -10,7 +10,7 @@ new Vue({
     navBarElement:[
       {
         page: 'HOME',
-        link: '#'
+        link: '#',
       },
       {
         page: 'ABOUT',
