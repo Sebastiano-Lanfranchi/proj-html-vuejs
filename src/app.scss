@@ -474,37 +474,34 @@ body{
     display: flex;
     justify-content: space-between;
 
+    .testimonial:hover .imgResize-test1 {
+      opacity: 1;
+    }
+
     .imgResize-test1{
       height: 400px;
       opacity: 0;
       transition: 0.5s;
+    }
 
-
-      &:hover{
-        opacity: 1;
-      }
+    .testimonial:hover .imgResize-test2 {
+      opacity: 1;
     }
 
     .imgResize-test2{
       height: 400px;
       opacity: 0;
       transition: 0.5s;
+    }
 
-
-      &:hover{
-        opacity: 1;
-      }
+    .testimonial:hover .imgResize-test3 {
+      opacity: 1;
     }
 
     .imgResize-test3{
       height: 400px;
       opacity: 0;
       transition: 0.5s;
-
-
-      &:hover{
-        opacity: 1;
-      }
     }
 
     .row-testimonial1{

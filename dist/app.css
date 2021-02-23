@@ -437,12 +437,15 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.container-testimonial .row-testimonial .testimonial:hover .imgResize-test1 {
+  opacity: 1;
+}
 .container-testimonial .row-testimonial .imgResize-test1 {
   height: 400px;
   opacity: 0;
   transition: 0.5s;
 }
-.container-testimonial .row-testimonial .imgResize-test1:hover {
+.container-testimonial .row-testimonial .testimonial:hover .imgResize-test2 {
   opacity: 1;
 }
 .container-testimonial .row-testimonial .imgResize-test2 {
@@ -450,16 +453,13 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.container-testimonial .row-testimonial .imgResize-test2:hover {
+.container-testimonial .row-testimonial .testimonial:hover .imgResize-test3 {
   opacity: 1;
 }
 .container-testimonial .row-testimonial .imgResize-test3 {
   height: 400px;
   opacity: 0;
   transition: 0.5s;
-}
-.container-testimonial .row-testimonial .imgResize-test3:hover {
-  opacity: 1;
 }
 .container-testimonial .row-testimonial .row-testimonial1 {
   width: 8%;
