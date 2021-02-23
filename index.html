@@ -160,14 +160,41 @@
                   </div>
                 </div>
                 <div class="slider-img" >
-                  <div class="container-img">
-                    <img :src="arrayCarousel[car0]" class="imgResize" alt="">
+                  <div class="invisible-red">
+                    <div class="container-img">
+                      <img :src="arrayCarousel[car0]" class="imgResize" alt="">
+                      <div class="invisible-text">
+                        Purynki products <br>
+                        <span>senza categoria</span>
+                      </div>
+                      <div class="plus-square">
+                        <i class="fas fa-plus fa-2x"></i>
+                      </div>
+                    </div>
                   </div>
-                  <div class="container-img">
-                    <img :src="arrayCarousel[car1]" class="imgResize" alt="">
+                  <div class="invisible-red">
+                    <div class="container-img">
+                      <img :src="arrayCarousel[car1]" class="imgResize" alt="">
+                      <div class="invisible-text">
+                        Purynki products <br>
+                        <span>senza categoria</span>
+                      </div>
+                      <div class="plus-square">
+                        <i class="fas fa-plus fa-2x"></i>
+                      </div>
+                    </div>
                   </div>
-                  <div class="container-img">
-                    <img :src="arrayCarousel[car2]" class="imgResize" alt="">
+                  <div class="invisible-red">
+                    <div class="container-img">
+                      <img :src="arrayCarousel[car2]" class="imgResize" alt="">
+                      <div class="invisible-text">
+                        Purynki products <br>
+                        <span>senza categoria</span>
+                      </div>
+                      <div class="plus-square">
+                        <i class="fas fa-plus fa-2x"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -228,63 +255,95 @@
               <!-- BLOG -->
               <div class="container-blog">
                 <div class="box-jumbotron">
-                    <div class="dash">
-                    </div>
-                    <h3 class="dash-title">Blog</h3>
-                    <div class="title-blog">the recent news you must read it
-                    </div>
-                    <div class="button-blog">
-                     View All
-                   </div>
+                  <div class="dash">
                   </div>
-                  <div class="container-blog-image">
-                      <img src="img/blog1.jpg" class="imgResize-blog" alt="">
-                      <div class="box-image1">
-                        <div class="box-text-image">
-                          <div class="calendar">
-                            july 4, 2019 by paul
-                          </div>
-                          <h3>Canadian Consulting Firm acquired by UK Giant</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.</p>
-                        </div>
-                      </div>
-                      <img src="img/blog2.jpg" class="imgResize-blog" alt="">
-                      <div class="box-image2">
-                        <div class="box-text-image">
-                          <div class="calendar">
-                            july 4, 2019 by paul
-                          </div>
-                          <h3>Canadian Consulting Firm acquired by UK Giant</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.</p>
-                        </div>
-                      </div>
+                  <h3 class="dash-title">Blog</h3>
+                  <div class="title-blog">the recent news you must read it
+                  </div>
+                  <div class="button-blog">
+                    View All
                   </div>
                 </div>
-                <!-- BANNER LET'S TALK -->
-                <div class="container-banner">
-                  <div class="textOnBanner">
-                    <h2>Let's talk about work</h2>
-                    <p>A wonderful serenity has taken possession far far away,
-                      behind the word mountains</p>
-                      <div class="banner-button">
-                        get started
+                <div class="container-blog-image">
+                  <img src="img/blog1.jpg" class="imgResize-blog" alt="">
+                  <div class="box-image1">
+                    <div class="box-text-image">
+                      <div class="calendar">
+                        july 4, 2019 by paul
                       </div>
+                      <h3>Canadian Consulting Firm acquired by UK Giant</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                      </div>
+                    </div>
+                    <img src="img/blog2.jpg" class="imgResize-blog" alt="">
+                    <div class="box-image2">
+                      <div class="box-text-image">
+                        <div class="calendar">
+                          july 4, 2019 by paul
+                        </div>
+                        <h3>Canadian Consulting Firm acquired by UK Giant</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <img src="img/banner.jpg" class="imgResize-banner"alt="">
-                </div>
-                <!-- FOOTER -->
-                <footer>
-                  <div class="container-footer1">
-                    <img src="img/logotype-3.png" alt="">
+                  <!-- BANNER LET'S TALK -->
+                  <div class="container-banner">
+                    <div class="textOnBanner">
+                      <h2>Let's talk about work</h2>
+                      <p>A wonderful serenity has taken possession far far away,
+                        behind the word mountains</p>
+                        <div class="banner-button">
+                          get started
+                        </div>
+                      </div>
+                      <img src="img/banner.jpg" class="imgResize-banner"alt="">
+                    </div>
+                    <!-- FOOTER -->
+                    <footer>
+                      <div class="container-footer">
+                        <div class="container-footer1">
+                          <div class="box-footer1">
+                            <img src="img/logotype-3.png" alt="">
+                          </div>
+                          <div class="box-footer2">
+                            <ul>
+                              <li v-for="element in navBarElement"><a href="{{element.link}}">{{element.page}}</a></li>
+                            </ul>
+                          </div>
+                          <div class="box-footer3">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                          </div>
+                        </div>
+                        <div class="container-footer2">
+                          <div class="terms">
+                            Terms of use <br>
+                            Privacy Environmental Policy
+                          </div>
+                          <div class="copyright">
+                            Copyright © 2020 Phlox Consulting. All rights Reserved.
+                          </div>
+                        </div>
+                        <div class="fixed-chat">
+                          <span class="arrow-back" @click="scrollBack">
+                            <i class="fas fa-arrow-up"></i>
+                          </span>
+                          <span class="chat-circle">
+                            <i class="far fa-comment fa-2x"></i>
+                          </span>
+                        </div>
+                      </div>
 
+                    </footer>
+                    <script src="js/script.js" charset="utf-8"></script>
                   </div>
-                </footer>
-              <script src="js/script.js" charset="utf-8"></script>
-            </div>
-          </div>
-        </body>
-        </html>
+                </div>
+              </body>
+              </html>

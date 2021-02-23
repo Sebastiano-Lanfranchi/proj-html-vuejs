@@ -3,29 +3,29 @@ new Vue({
   data:{
     navBarElement:[
       {
-      page: 'HOME',
-      link: '#'
-    },
-    {
-    page: 'ABOUT',
-    link: '#'
-    },
-    {
-    page: 'PROJECTS',
-    link: '#'
-    },
-    {
-    page: 'SERVICES',
-    link: '#'
-    },
-    {
-    page: 'BLOG',
-    link: '#'
-    },
-    {
-    page: 'CONTACT',
-    link: '#'
-    },
+        page: 'HOME',
+        link: '#'
+      },
+      {
+        page: 'ABOUT',
+        link: '#'
+      },
+      {
+        page: 'PROJECTS',
+        link: '#'
+      },
+      {
+        page: 'SERVICES',
+        link: '#'
+      },
+      {
+        page: 'BLOG',
+        link: '#'
+      },
+      {
+        page: 'CONTACT',
+        link: '#'
+      },
     ],
     arrayCarousel: [
       'img/imgCarousel/1.jpg',
@@ -43,21 +43,27 @@ new Vue({
   methods:{
     sliderNext: function(){
       if (this.arrayCarousel.length - 1 > this.car2) {
-       this.car0 = this.car0 + 1;
-       this.car1 = this.car1 + 1;
-       this.car2 = this.car2 + 1;
-       console.log(this.arrayCarousel.length);
-       console.log(this.car2)
+        this.car0 = this.car0 + 1;
+        this.car1 = this.car1 + 1;
+        this.car2 = this.car2 + 1;
+        console.log(this.arrayCarousel.length);
+        console.log(this.car2)
       }
     },
     sliderPrev: function(){
       if (this.car2 > 2) {
-       this.car0 = this.car0 - 1;
-       this.car1 = this.car1 - 1;
-       this.car2 = this.car2 - 1;
-       console.log(this.arrayCarousel.length);
-       console.log(this.car2)
+        this.car0 = this.car0 - 1;
+        this.car1 = this.car1 - 1;
+        this.car2 = this.car2 - 1;
+        console.log(this.arrayCarousel.length);
+        console.log(this.car2)
       }
+    },
+    scrollBack: function(){
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   }
 })

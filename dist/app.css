@@ -255,6 +255,10 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.row-getStarted .row-getStarted1 .slogan-button:hover {
+  cursor: pointer;
+  background-color: #888888;
+}
 .row-getStarted .row-getStarted2 {
   background-color: #1F1E38;
   width: 8%;
@@ -342,19 +346,54 @@ body {
   position: relative;
   top: 200px;
 }
-.container-project .container-carousel .slider-img .container-img {
+.container-project .container-carousel .slider-img .invisible-red {
+  background-color: #F00E2E;
+}
+.container-project .container-carousel .slider-img .invisible-red .container-img {
+  color: red;
   width: 501px;
   height: 436px;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-.container-project .container-carousel .slider-img .container-img:hover .imgResize {
+.container-project .container-carousel .slider-img .invisible-red .container-img:hover .invisible-text, .container-project .container-carousel .slider-img .invisible-red .container-img:hover .plus-square, .container-project .container-carousel .slider-img .invisible-red .container-img:hover .invisible-text span {
+  opacity: 1;
+}
+.container-project .container-carousel .slider-img .invisible-red .container-img:hover .imgResize {
   cursor: pointer;
-  width: 521px;
-  height: 456px;
+  opacity: 0.3;
 }
-.container-project .container-carousel .slider-img .container-img .imgResize {
+.container-project .container-carousel .slider-img .invisible-red .container-img .imgResize {
   width: 501px;
   height: 436px;
+}
+.container-project .container-carousel .slider-img .invisible-red .container-img .invisible-text {
+  color: #FFFFFF;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 30px;
+  position: absolute;
+  bottom: 60px;
+  opacity: 0;
+}
+.container-project .container-carousel .slider-img .invisible-red .container-img .invisible-text span {
+  color: #FFFFFF;
+  font-weight: lighter;
+  opacity: 0;
+}
+.container-project .container-carousel .slider-img .invisible-red .container-img .plus-square {
+  position: absolute;
+  text-align: center;
+  line-height: 70px;
+  width: 60px;
+  height: 60px;
+  top: 300px;
+  left: 400px;
+  color: #FFFFFF;
+  background-color: #333333;
+  opacity: 0;
 }
 
 .container-testimonial {
@@ -573,7 +612,7 @@ body {
 .container-banner {
   background-color: #1F1E38;
   width: 100vw;
-  height: 900px;
+  height: 750px;
   position: relative;
 }
 .container-banner .textOnBanner {
@@ -609,9 +648,90 @@ body {
   font-weight: 300;
   background-color: #1F1E38;
 }
+.container-banner .textOnBanner .banner-button:hover {
+  cursor: pointer;
+  background-color: #888888;
+}
 .container-banner .imgResize-banner {
   margin-top: 200px;
   height: 450px;
   width: 100%;
   position: relative;
+}
+
+.container-footer {
+  width: 100%;
+  height: 230px;
+  background-color: #1F1E38;
+}
+.container-footer .container-footer1 {
+  margin: 0 auto;
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  border-bottom: 0.5px solid #AAAAAA;
+}
+.container-footer .container-footer1 .box-footer1 {
+  vertical-align: middle;
+}
+.container-footer .container-footer1 .box-footer2 * li {
+  font-weight: lighter;
+  display: inline-block;
+  color: #AAAAAA;
+}
+.container-footer .container-footer1 .box-footer2 * li a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #AAAAAA;
+}
+.container-footer .container-footer1 .box-footer2 * li a:hover {
+  color: #FFFFFF;
+  font-family: "Cairo", sans-serif;
+}
+.container-footer .container-footer1 .box-footer3 i {
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.container-footer .container-footer2 {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  color: #AAAAAA;
+}
+.container-footer .fixed-chat {
+  position: fixed;
+  bottom: 60px;
+  left: 1760px;
+}
+.container-footer .fixed-chat .arrow-back {
+  height: 25px;
+  width: 25px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 10px;
+}
+.container-footer .fixed-chat .arrow-back:hover {
+  cursor: pointer;
+}
+.container-footer .fixed-chat .chat-circle {
+  padding-top: 30px;
+  padding-left: 15px;
+  background-color: #527CEB;
+  border-radius: 100%;
+  color: #FFFFFF;
+}
+.container-footer .fixed-chat .chat-circle:hover {
+  cursor: pointer;
+}
+.container-footer .fixed-chat .chat-circle i {
+  position: relative;
+  bottom: 10px;
+  right: 7px;
 }
