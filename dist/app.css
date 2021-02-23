@@ -55,7 +55,6 @@
 .nav-header .box-header-logo .jumbotron .buttonRead {
   position: relative;
   top: 660px;
-  border: 4px solid #1F1E38;
   width: 250px;
   height: 60px;
   right: 50px;
@@ -542,7 +541,6 @@ body {
   left: 1300px;
   bottom: 50px;
   text-transform: uppercase;
-  border: 4px solid #1F1E38;
   width: 250px;
   height: 60px;
   right: 50px;
@@ -709,12 +707,56 @@ body {
   font-weight: 300;
   color: #AAAAAA;
 }
-.container-footer .fixed-chat {
+
+.fixed-chat {
   position: fixed;
   bottom: 60px;
   left: 1760px;
 }
-.container-footer .fixed-chat .arrow-back {
+.fixed-chat .chat-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  height: 400px;
+  width: 400px;
+  background-color: #FFFFFF;
+  right: 1700px;
+  top: 92px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.fixed-chat .chat-box i {
+  position: fixed;
+  left: 400px;
+  margin-top: 4px;
+  color: #F81D39;
+}
+.fixed-chat .chat-box i:hover {
+  cursor: pointer;
+}
+.fixed-chat .chat-box span {
+  position: fixed;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #333333;
+  bottom: 370px;
+  left: 200px;
+}
+.fixed-chat .chat-box input {
+  position: fixed;
+  width: 370px;
+  top: 900px;
+}
+.fixed-chat .chat-box .sendMessage-chat {
+  width: 300px;
+  padding: 3px;
+  margin-top: 30px;
+  margin-left: 70px;
+  border-radius: 5px;
+  background-color: #AAAAAA;
+}
+.fixed-chat .icon-box .arrow-back {
   height: 25px;
   width: 25px;
   background-color: #FFFFFF;
@@ -724,20 +766,20 @@ body {
   position: relative;
   bottom: 10px;
 }
-.container-footer .fixed-chat .arrow-back:hover {
+.fixed-chat .icon-box .arrow-back:hover {
   cursor: pointer;
 }
-.container-footer .fixed-chat .chat-circle {
+.fixed-chat .icon-box .chat-circle {
   padding-top: 30px;
   padding-left: 15px;
   background-color: #527CEB;
   border-radius: 100%;
   color: #FFFFFF;
 }
-.container-footer .fixed-chat .chat-circle:hover {
+.fixed-chat .icon-box .chat-circle:hover {
   cursor: pointer;
 }
-.container-footer .fixed-chat .chat-circle i {
+.fixed-chat .icon-box .chat-circle i {
   position: relative;
   bottom: 10px;
   right: 7px;

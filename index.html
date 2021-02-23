@@ -331,15 +331,28 @@
                             Copyright © 2020 Phlox Consulting. All rights Reserved.
                           </div>
                         </div>
-                        <div class="fixed-chat">
-                          <span class="arrow-back" @click="scrollBack">
-                            <i class="fas fa-arrow-up"></i>
-                          </span>
-                          <span class="chat-circle">
-                            <i class="far fa-comment fa-2x"></i>
-                          </span>
                         </div>
-                      </div>
+                        <div class="fixed-chat">
+                          <template id="" v-if="chatBox==true">
+                            <div class="chat-box">
+                              <span>Assisitenza Phlox</span>
+                              <i class="far fa-times-circle fa-lg" @click="chatBoxDeactiver"></i>
+                              <input type="text"  placeholder="Scrivi un messaggio"  v-model="sendMessage" @keyup.enter="enterSend">
+                              <div class="sendMessage-chat" v-for="send in arraySendMessage">
+                                {{send}}
+                              </div>
+                            </div>
+                          </template>
+                          <div class="icon-box">
+                            <span class="arrow-back" @click="scrollBack">
+                              <i class="fas fa-arrow-up"></i>
+                            </span>
+                            <span class="chat-circle" @click="chatBoxActiver">
+                              <i class="far fa-comment fa-2x"></i>
+                            </span>
+                          </div>
+                        </div>
+
 
                     </footer>
                     <script src="js/script.js" charset="utf-8"></script>
